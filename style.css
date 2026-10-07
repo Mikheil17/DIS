@@ -1,0 +1,62 @@
+h1 {
+    color: teal;
+}
+
+html, section {
+    background-color: rgb(44, 44, 44);
+}
+
+.footer {
+    background-color: rgb(33, 33, 33);
+    color: red;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee-left 15s linear infinite;
+}
+
+.marquee span {
+    padding-right: 5px;
+}
+
+@keyframes marquee-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+header {
+    background-color: rgb(33, 33, 33);
+}
+
+header .logo {
+    width: 250px;
+    height: auto;
+    transform: translateX(-50%);
+}
+
+header .nav-link {
+    color: maroon;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+}
+
+h1 {
+    font-size: 20rem;
+}
+
+.payment {
+    width: 400px;
+    height: auto;
+}
