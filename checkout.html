@@ -1,0 +1,330 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Dungeon Deals</title>
+    <link rel="icon" type="image/png" href="img/logo-square.png">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" class="logo" alt="Dungeon Deals">
+                </a>
+                
+
+                <a href="cart.html" class="cart-link">🛒 Back to Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-page">
+        <div class="container">
+
+            <div class="cart-heading">
+                <span class="shop-label">ALMOST THERE</span>
+                <h1>CHECKOUT</h1>
+                <p>Complete your order and continue your adventure.</p>
+            </div>
+
+            <div id="checkout-content" class="row g-5">
+
+                <!-- Customer information -->
+                <div class="col-lg-7">
+                    <form id="checkout-form">
+
+                        <section class="checkout-section">
+                            <h2>CONTACT INFORMATION</h2>
+
+                            <div class="checkout-field">
+                                <label for="customer-name">Full name</label>
+                                <input
+                                    type="text"
+                                    id="customer-name"
+                                    required
+                                    autocomplete="name"
+                                >
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="customer-email">Email address</label>
+                                <input
+                                    type="email"
+                                    id="customer-email"
+                                    required
+                                    autocomplete="email"
+                                >
+                            </div>
+                        </section>
+
+                        <section class="checkout-section">
+                            <h2>SHIPPING ADDRESS</h2>
+
+                            <div class="checkout-field">
+                                <label for="customer-address">Street address</label>
+                                <input
+                                    type="text"
+                                    id="customer-address"
+                                    required
+                                    autocomplete="street-address"
+                                >
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 checkout-field">
+                                    <label for="customer-city">City</label>
+                                    <input
+                                        type="text"
+                                        id="customer-city"
+                                        required
+                                        autocomplete="address-level2"
+                                    >
+                                </div>
+
+                                <div class="col-md-6 checkout-field">
+                                    <label for="customer-state">State</label>
+                                    <input
+                                        type="text"
+                                        id="customer-state"
+                                        required
+                                        autocomplete="address-level1"
+                                    >
+                                </div>
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="customer-zip">ZIP / Postal code</label>
+                                <input
+                                    type="text"
+                                    id="customer-zip"
+                                    required
+                                    autocomplete="postal-code"
+                                >
+                            </div>
+
+                            <div class="checkout-field">
+                                <label for="customer-country">Country</label>
+                                <select id="customer-country" required>
+                                    <option value="">Select a country</option>
+                                    <option value="United States">United States</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </section>
+
+                        
+<section class="checkout-section">
+    <h2>PAYMENT METHOD</h2>
+
+    <div class="payment-methods">
+
+        <label class="payment-method">
+            <input type="radio" name="payment" value="card" checked>
+            <span>Credit / Debit Card</span>
+            <span class="payment-icons">VISA · MC · AMEX</span>
+        </label>
+
+        <div id="card-payment" class="payment-details">
+
+            <div class="checkout-field">
+                <label for="card-name">Cardholder name</label>
+                <input
+                    type="text"
+                    id="card-name"
+                    placeholder="John Smith"
+                    autocomplete="off"
+                    required
+                >
+            </div>
+
+            <div class="checkout-field">
+                <label for="card-number">Card number</label>
+                <input
+                    type="text"
+                    id="card-number"
+                    placeholder="1234 5678 9012 3456"
+                    inputmode="numeric"
+                    maxlength="19"
+                    autocomplete="off"
+                    required
+                >
+            </div>
+
+            <div class="row">
+                <div class="col-6 checkout-field">
+                    <label for="card-expiry">Expiration date</label>
+                    <input
+                        type="text"
+                        id="card-expiry"
+                        placeholder="MM/YY"
+                        maxlength="5"
+                        autocomplete="off"
+                        required
+                    >
+                </div>
+
+                <div class="col-6 checkout-field">
+                    <label for="card-cvv">Security code</label>
+                    <input
+                        type="text"
+                        id="card-cvv"
+                        placeholder="123"
+                        inputmode="numeric"
+                        maxlength="4"
+                        autocomplete="off"
+                        required
+                    >
+                </div>
+            </div>
+
+
+        </div>
+
+        <label class="payment-method">
+            <input type="radio" name="payment" value="paypal">
+            <span>PayPal</span>
+            <strong class="paypal-logo">PayPal</strong>
+        </label>
+
+        <div id="paypal-payment" class="payment-details" hidden>
+            <p>
+                You will be redirected to PayPal to complete your payment.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+                        <button type="submit" class="checkout-button">
+                            PLACE ORDER
+                        </button>
+
+                    </form>
+                </div>
+
+                <!-- Order summary -->
+                <div class="col-lg-5">
+                    <div class="cart-summary checkout-summary">
+                        <h3>YOUR ORDER</h3>
+
+                        <div id="checkout-items"></div>
+
+                        <hr>
+
+                        <div class="summary-line">
+                            <span>Subtotal</span>
+                            <strong id="checkout-subtotal">$0.00</strong>
+                        </div>
+
+                        <div class="summary-line">
+                            <span>Shipping</span>
+                            <strong id="checkout-shipping">$0.00</strong>
+                        </div>
+
+                        <hr>
+
+                        <div class="summary-line summary-total">
+                            <span>Total</span>
+                            <strong id="checkout-total">$0.00</strong>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Order confirmation -->
+            <div id="order-success" class="order-success" hidden>
+                <div class="success-icon">✓</div>
+                <span class="shop-label">QUEST COMPLETE</span>
+                <h1>ORDER CONFIRMED!</h1>
+                <p>
+                    Thank you for shopping with Dungeon Deals.
+                    
+                </p>
+
+                <p>
+                    Order number:
+                    <strong id="order-number"></strong>
+                </p>
+
+                <p class="checkout-disclaimer">
+                    This was a simulated purchase. No payment was made
+                    and no order will be shipped.
+                </p>
+
+                <a href="shop.html" class="shop-button">
+                    CONTINUE SHOPPING
+                </a>
+            </div>
+
+            <div id="checkout-empty" class="empty-cart" hidden>
+                <h2>YOUR CART IS EMPTY</h2>
+                <p>Add something to your cart before checking out.</p>
+                <a href="shop.html" class="shop-button">EXPLORE THE COLLECTION</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="img/logo.png" class="footer-logo" alt="Dungeon Deals">
+                    <p>For adventurers, by adventurers.</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>QUICK LINKS</h5>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="shipping.html">Shipping Policy</a>
+                    <a href="policy.html">Returns Policy</a>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>WE ACCEPT</h5>
+                    <img src="img/payment.png" class="payment" alt="Payment methods">
+                </div>
+
+                <div class="col-md-3">
+                    <h5>GET IN TOUCH</h5>
+                    <p>Questions? We're here to help.</p>
+                    <a href="mailto:support@dungeondeals.com">
+                        support@dungeondeals.com
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="footer">
+            <div class="marquee">
+                <span>Welcome to Dungeon Deals! The place for all your DnD needs. A Dungeons and Dragons Shop Run By Fans, For Fans —</span>
+                <span aria-hidden="true">Welcome to Dungeon Deals! The place for all your DnD needs. A Dungeons and Dragons Shop Run By Fans, For Fans —</span>
+                <span aria-hidden="true">Welcome to Dungeon Deals! The place for all your DnD needs. A Dungeons and Dragons Shop Run By Fans, For Fans —</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

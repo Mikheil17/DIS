@@ -1,0 +1,174 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Dungeon Deals</title>
+    <link rel="icon" type="image/png" href="img/logo-square.png">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" class="logo" alt="Dungeon Deals">
+                </a>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="shop.html" class="nav-link">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="cart.html" class="cart-link active" aria-current="page">
+                    🛒 Cart<span id="cart-count" class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+
+            <div class="cart-heading">
+                <span class="shop-label">YOUR ADVENTURE</span>
+                <h1>YOUR SHOPPING CART</h1>
+                <p>Review your items before continuing your quest.</p>
+            </div>
+
+            <div class="row g-5">
+
+                <!-- Cart items -->
+                <div class="col-lg-8">
+                    <div id="cart-items">
+                        <!-- Cart items inserted by JavaScript -->
+                    </div>
+
+                    <div id="empty-cart" class="empty-cart" hidden>
+                        <h2>YOUR CART IS EMPTY</h2>
+                        <p>Looks like your next adventure hasn't started yet.</p>
+                        <a href="shop.html" class="shop-button">
+                            EXPLORE THE COLLECTION
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Order summary -->
+                <div class="col-lg-4" id="cart-summary">
+                    <div class="cart-summary">
+                        <h3>ORDER SUMMARY</h3>
+
+                        <div class="summary-line">
+                            <span>Subtotal</span>
+                            <strong id="cart-subtotal">$0.00</strong>
+                        </div>
+
+                        <div class="summary-line">
+                            <span>Shipping</span>
+                            <span>Calculated at checkout</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="summary-line summary-total">
+                            <span>Total</span>
+                            <strong id="cart-total">$0.00</strong>
+                        </div>
+
+                        <a href="checkout.html" id="checkout-button"
+                           class="checkout-button">
+                            PROCEED TO CHECKOUT
+                        </a>
+
+                        <a href="shop.html" class="continue-shopping">
+                            CONTINUE SHOPPING
+                        </a>
+
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="img/logo.png" class="footer-logo" alt="Dungeon Deals">
+                    <p>For adventurers, by adventurers.</p>
+                </div>
+
+                <div class="col-md-2">
+                    <h5>QUICK LINKS</h5>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="shipping.html">Shipping Policy</a>
+                    <a href="policy.html">Returns Policy</a>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>WE ACCEPT</h5>
+                    <img src="img/payment.png" class="payment" alt="Payment methods">
+                </div>
+
+                <div class="col-md-3">
+                    <h5>GET IN TOUCH</h5>
+                    <p>Questions? We're here to help.</p>
+                    <a href="mailto:support@dungeondeals.com">
+                        support@dungeondeals.com
+                    </a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="footer">
+            <div class="marquee">
+                <span>Welcome to Dungeon Deals! The place for all your DnD needs. A Dungeons and Dragons Shop Run By Fans, For Fans —</span>
+                <span aria-hidden="true">Welcome to Dungeon Deals! The place for all your DnD needs. A Dungeons and Dragons Shop Run By Fans, For Fans —</span>
+                <span aria-hidden="true">Welcome to Dungeon Deals! The place for all your DnD needs. A Dungeons and Dragons Shop Run By Fans, For Fans —</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
