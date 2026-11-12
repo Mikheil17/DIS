@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   announcement.className = "announcement";
   announcement.innerHTML = `
-        FREE SHIPPING ON ORDERS OVER $25. HURRY UP, OFFER ENDS IN
+        HURRY UP! FREE SHIPPING ON ORDERS OVER $25. LIMITED TIME OFFER!
         <span id="countdown">01:00:00</span>
     `;
 
@@ -70,7 +70,7 @@ const products = [
     id: "vintage-dragon-shirt",
     name: "Vintage Dragon T-Shirt",
     category: "shirts",
-    price: 13.5,
+    price: 0.0,
     originalPrice: 45.0,
     images: ["img/shirt/1.webp", "img/shirt/2.jpg", "img/shirt/3.webp"],
     description: "A vintage-inspired dragon design for your next adventure.",
@@ -82,7 +82,7 @@ const products = [
     id: "demilich-hoodie",
     name: "Demilich Hoodie",
     category: "hoodies",
-    price: 25.0,
+    price: 9.0,
     originalPrice: 75.0,
     images: ["img/hoodie/1.webp", "img/hoodie/2.jpg", "img/hoodie/3.webp"],
     description:
@@ -95,9 +95,9 @@ const products = [
     id: "mystic-dice",
     name: "Mystic Dice Set",
     category: "accessories",
-    price: 5.0,
+    price: 2.0,
     originalPrice: 25.0,
-    images: ["img/dice/1.webp", "img/dice/2.webp", "img/dice/3.webp"],
+    images: ["img/dice/1.webp"],
     description: "A mystical dice set for your next campaign.",
     soldOut: false,
     featured: true,
@@ -107,7 +107,7 @@ const products = [
     id: "dragons-lair-mug",
     name: "Dragon's Lair Mug",
     category: "accessories",
-    price: 2.0,
+    price: 0.0,
     originalPrice: 20.0,
     images: ["img/mug/1.webp", "img/mug/2.webp", "img/mug/3.webp"],
     description: "A fantasy-inspired mug for your everyday adventures.",
@@ -119,12 +119,10 @@ const products = [
     id: "tarrasque-heavyweight-tee",
     name: "Tarrasque Heavyweight Tee",
     category: "shirts",
-    price: 35.0,
+    price: 4.0,
     originalPrice: 40.0,
     images: [
-      "img/shirt/4.webp",
-      "img/shirt/5.webp",
-      "img/shirt/6.webp",
+      "img/shirt/4.webp"
     ],
     description: "The Forge is our heavyweight graphic tee collection.",
     soldOut: false,
@@ -135,7 +133,7 @@ const products = [
     id: "beanie",
     name: "Beanie",
     category: "accessories",
-    price: 18.0,
+    price: 2.0,
     originalPrice: 25.0,
     images: ["img/benie/1.webp", "img/benie/2.webp"],
     description:
@@ -148,11 +146,11 @@ const products = [
     id: "best-friend-necklace",
     name: "Best Friend Necklace Set",
     category: "accessories",
-    price: 16.0,
+    price: 1.0,
     originalPrice: 20.0,
-    images: ["img/necklace/1.webp", "img/necklace/2.webp", "img/necklace/3.webp", "img/necklace/4.webp"],
+    images: ["img/necklace/1.webp"],
     description: "Dungeons & Dragons Dice Cage Best Friend Necklace Set",
-    soldOut: true,
+    soldOut: false,
     featured: false,
     hasSizes: false,
   },
@@ -160,7 +158,7 @@ const products = [
     id: "how-i-roll-hoodie",
     name: "How I Roll Hoodie",
     category: "hoodies",
-    price: 70.0,
+    price: 8.0,
     originalPrice: 100.0,
     images: ["img/hoodie/4.webp"],
     description:

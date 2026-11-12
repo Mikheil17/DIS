@@ -243,7 +243,7 @@ body {
 }
 
 .payment {
-    max-width: 220px;
+    max-width: 600px;
 }
 
 .copyright {
@@ -1592,4 +1592,299 @@ body {
   color: #111;
   font-size: 12px;
   font-weight: bold;
+}
+
+
+
+/* =========================================
+   WEBSITE #1 — CHEAP / UNTRUSTWORTHY DESIGN
+========================================= */
+
+/* Overall appearance */
+body {
+    background: #d8d6d1 !important;
+    color: #252525 !important;
+    font-family: "Trebuchet MS", Arial, sans-serif !important;
+    letter-spacing: -0.3px;
+}
+
+/* Make typography inconsistent */
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-weight: 400 !important;
+}
+
+p, a, button, label {
+    font-family: Arial, sans-serif !important;
+}
+
+/* Header */
+.main-header {
+    background: #171717 !important;
+    border-bottom: 4px solid #a75b12 !important;
+    box-shadow: 0 4px 8px #0003;
+}
+
+.logo {
+    width: 155px !important;
+    max-height: 55px;
+    object-fit: fill;
+}
+
+.nav-link {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.5px;
+    margin: 0 5px !important;
+}
+
+/* Announcement bar */
+.announcement {
+    background: #a75b12 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    letter-spacing: 0 !important;
+    text-transform: uppercase;
+    padding: 13px 5px !important;
+}
+
+/* Hero */
+.hero {
+    min-height: 370px !important;
+    background:
+        linear-gradient(90deg, #000b, #0005),
+        url("img/hero.jpg") center / cover no-repeat !important;
+}
+
+.hero-content {
+    padding: 45px 25px !important;
+    max-width: 720px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 4vw, 49px) !important;
+    line-height: 1.05;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero-subtitle {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 15px !important;
+}
+
+/* Sections */
+.products-section {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+}
+
+.section-heading {
+    margin-bottom: 25px !important;
+}
+
+.section-heading h2 {
+    font-size: 29px !important;
+    text-decoration: underline;
+}
+
+/* Product cards */
+.product-card,
+.shop-product-card {
+    background: #f4f2ed !important;
+    border: 1px solid #aaa !important;
+    border-radius: 0 !important;
+    box-shadow: 2px 3px 5px #0002;
+    padding: 7px !important;
+    overflow: visible !important;
+}
+
+.product-card h5 {
+    font-family: Arial, sans-serif !important;
+    font-size: 14px;
+    text-align: left;
+    margin: 12px 4px !important;
+}
+
+.shop-product-info {
+    padding: 12px !important;
+}
+
+.shop-product-info h3 {
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+/* Uneven image proportions */
+.product-card img,
+.shop-product-image img {
+    width: 100%;
+    height: 205px !important;
+    object-fit: fill !important;
+}
+
+/* Make some product images inconsistent */
+#featured-products > div:nth-child(2) img {
+    height: 175px !important;
+}
+
+#featured-products > div:nth-child(3) img {
+    height: 225px !important;
+}
+
+#featured-products > div:nth-child(4) img {
+    height: 190px !important;
+}
+
+/* Sale labels */
+.sale-badge,
+.product-status {
+    border-radius: 0 !important;
+    font-size: 10px !important;
+    letter-spacing: 0 !important;
+    padding: 5px !important;
+}
+
+.sale-badge {
+    background: #a75b12 !important;
+    color: white !important;
+}
+
+/* Prices */
+.discounted-price,
+.card-price strong {
+    color: #a43e1b !important;
+}
+
+.price {
+    gap: 5px !important;
+}
+
+/* Buttons */
+.shop-button,
+.product-button,
+.view-product,
+.add-cart-button,
+.checkout-button {
+    border-radius: 0 !important;
+    box-shadow: 1px 2px 3px #0003;
+    letter-spacing: 0 !important;
+    font-size: 11px !important;
+}
+
+.product-button {
+    border: 1px solid #999 !important;
+    background: #dedbd4;
+    color: #333 !important;
+}
+
+/* Product detail */
+.product-page,
+.shop-page,
+.info-page {
+    background: #d8d6d1 !important;
+    color: #252525 !important;
+}
+
+.product-detail-info h1 {
+    font-family: Georgia, serif !important;
+    font-size: 34px !important;
+    line-height: 1.1;
+}
+
+.product-detail-image {
+    background: #c8c5bf !important;
+    padding: 8px;
+    border: 1px solid #aaa;
+}
+
+.product-detail-image img {
+    aspect-ratio: 4 / 5 !important;
+    object-fit: fill !important;
+}
+
+/* Misaligned thumbnails */
+.product-thumbnails {
+    gap: 5px !important;
+    align-items: flex-start;
+}
+
+.product-thumbnails img {
+    width: 65px !important;
+    height: 65px !important;
+    border: 1px solid #aaa !important;
+}
+
+/* Inputs */
+.product-option select,
+.product-option input,
+.shop-controls select,
+.checkout-field input,
+.checkout-field select {
+    background: #f5f4f0 !important;
+    color: #222 !important;
+    border: 1px solid #aaa !important;
+    border-radius: 0 !important;
+    box-shadow: inset 1px 1px 3px #0002;
+}
+
+/* Information pages */
+.info-content h1,
+.info-content h2 {
+    font-family: Georgia, serif !important;
+}
+
+.info-content p,
+.info-content li {
+    color: #444 !important;
+}
+
+/* Footer */
+.main-footer,
+.site-footer {
+    background: #171717 !important;
+    border-top: 4px solid #a75b12;
+}
+
+.main-footer h5,
+.site-footer h4,
+.site-footer h5 {
+    color: #c17a36 !important;
+}
+
+/* Cart and checkout */
+.cart-summary,
+.empty-cart,
+.payment-method,
+.payment-details {
+    background: #eee !important;
+    color: #222 !important;
+    border: 1px solid #aaa !important;
+    border-radius: 0 !important;
+}
+
+.cart-heading h1,
+.checkout-section h2 {
+    color: #252525 !important;
+    font-family: Georgia, serif !important;
+}
+
+/* Make spacing inconsistent */
+.shop-heading {
+    padding: 55px 15px !important;
+    background: #c9c6bf !important;
+}
+
+.shop-toolbar {
+    padding: 12px;
+    background: #c9c6bf;
+}
+
+.promo-section {
+    background: #bdb9b1 !important;
+    padding: 45px 15px !important;
 }
